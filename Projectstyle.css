@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Condensed:wght@500&display=swap');
+@keyframes transition1
+{
+    from
+    {
+        opacity: 0.1;
+        box-shadow: 20px 20px 1000px gold;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes transition2
+{
+    from
+    {
+    }
+    to
+    {
+        background-image: url('Home_Blackback.jpg');
+    }
+}
+
+.container
+{
+    position: relative;
+    max-width: 1200px;
+    min-height: 80vh;
+
+    margin: 0;
+    padding: 0px, 0px;
+
+    box-sizing: border-box;
+    flex-wrap: wrap;
+
+    display: flex;
+    font-family: 'Encode Sans Condensed', sans-serif;
+
+    justify-content: center;
+    align-items: center;
+        
+    z-index: 1;
+}
+
+.container .project
+{
+    position: relative;
+
+    width: 250px;
+    height:250px;
+    padding: 0px, 0px;
+    margin:20px; /* To regulate the distance between the boxes */
+
+    border-radius: 1000px;
+    background: rgba(255, 255, 255, 0.1);
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 2px outset rgba(255, 255, 255, 0.5);
+
+    backdrop-filter: blur(10px);
+
+    animation: transition1 2s;
+}
+
+.container .project .project_head
+{
+    color:white;
+    display:flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px;
+
+    position:absolute;
+
+    z-index: 1;
+
+}
+
+.container .project .content 
+{
+    color:white;
+    display:flex;
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 10px;
+
+    position:absolute;
+    transform: translateY(1000px);
+
+    z-index: 1;
+}
+
+.container .project:hover 
+{
+    box-shadow: 10px 10px 100px gold;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.484);
+    border: 10px outset rgba(255, 255, 255, 0.5);
+    transform: translateY(-30px);
+    transition:0.3s;
+}
+
+.container .project:hover .content 
+{
+    transform: translateY(0px);
+    transition:0.5s;
+}
+
+.container .project:hover .project_head
+{
+    transform: translateX(-500px);
+    transition:0.5s;
+}
+
