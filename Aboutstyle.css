@@ -16,19 +16,19 @@
 
 .container
 {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:auto;
+    padding:auto;
+    box-sizing:border-box;
     font-family: 'Encode Sans Condensed', sans-serif;
     color:white;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    justify-content:center;
+    align-items:center;
+    min-height: 80vh;
 
     position: relative;
-    max-width: 1200px;
+    max-width: auto;
     flex-wrap: wrap;
     z-index: 1;
 }

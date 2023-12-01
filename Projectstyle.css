@@ -26,10 +26,10 @@
 .container
 {
     position: relative;
-    max-width: 1200px;
+    max-width: auto;
     min-height: 80vh;
 
-    margin: 0;
+    margin: auto;
     padding: 0px, 0px;
 
     box-sizing: border-box;
@@ -62,7 +62,7 @@
     justify-content: center;
     align-items: center;
 
-    border: 2px outset rgba(255, 255, 255, 0.5);
+    border: 10px outset rgba(255, 255, 255, 0.5);
 
     backdrop-filter: blur(10px);
 
@@ -102,13 +102,13 @@
     z-index: 1;
 }
 
-.container .project:hover 
+.container .project:hover
 {
-    box-shadow: 10px 10px 100px gold;
+    box-shadow: -30px 30px 10px darkorange;
     overflow: hidden;
     background: rgba(0, 0, 0, 0.484);
-    border: 10px outset rgba(255, 255, 255, 0.5);
-    transform: translateY(-30px);
+    border: 10px outset greenyellow;
+    
     transition:0.3s;
 }
 
