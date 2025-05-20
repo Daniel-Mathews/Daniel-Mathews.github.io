@@ -86,6 +86,13 @@ header
     color: white;
 }
 
+.nav_links li:hover a
+{
+    opacity: 0.5;
+    color:gold;
+}
+
+
 .Contact_Home_Button 
 {
     padding: 9px 25px;
